@@ -10,6 +10,8 @@ const search = document.getElementById('search');
 
 getMovies(API_URL);
 
+console.log('pulled request')
+
 function getMovies(url) {
   fetch(url).then(res => res.json()).then(data => {
     console.log(data);
